@@ -20,7 +20,7 @@
 	<div>
 		<h2>
 			<GithubLogo size="1em" aria-label="github" />
-			<a href="https://github.com/gitlimes" target="_blank" rel="noreferrer noopener">@gitlimes</a>
+			<a href="https://github.com/limesdotpink" target="_blank" rel="noreferrer noopener">@limesdotpink</a>
 		</h2>
 		<p>{m.contact_github()}</p>
 	</div>

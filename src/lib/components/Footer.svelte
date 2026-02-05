@@ -15,7 +15,7 @@
 	<div>
 		<p>
 			© {year} Limes Inc. -
-			<a href="https://github.com/gitlimes/website">{m.source_code()}</a>{' - '}<LanguageSwitcher />
+			<a href="https://github.com/limesdotpink/website">{m.source_code()}</a>{' - '}<LanguageSwitcher />
 		</p>
 		<p>{m.footer_text()}</p>
 	</div>

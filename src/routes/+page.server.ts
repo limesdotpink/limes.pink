@@ -32,7 +32,7 @@ export const load: PageServerLoad = async ({ url }) => {
 
 	if (!stuffStats.dcbadge) {
 		try {
-			const response = await fetch(`https://api.github.com/repos/gitlimes/dcbadge`);
+			const response = await fetch(`https://api.github.com/repos/limesdotpink/dcbadge`);
 
 			if (!response.ok) {
 				throw new Error('Network error');

@@ -25,7 +25,7 @@
 				onblur={() => (hover = false)}
 				><Logotype fillColor={logoColor} {bgColor} size={'1.25rem'} /></a
 			>{' - '}
-			<a href="https://github.com/gitlimes/website">{m.source_code()} </a>{' - '}<LanguageSwitcher
+			<a href="https://github.com/limesdotpink/website">{m.source_code()} </a>{' - '}<LanguageSwitcher
 			/>
 		</p>
 	</footer>

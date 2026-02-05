@@ -7,7 +7,7 @@
 	const cards = [
 		{ n: 'msgithub', l: 'https://microsoftgithub.com/usage' },
 		{ n: 'nint', l: 'https://nintendo.uk.net/usage' },
-		{ n: 'dcbadge', l: 'https://github.com/gitlimes/dcbadge' },
+		{ n: 'dcbadge', l: 'https://github.com/limesdotpink/dcbadge' },
 		{ n: 'errors', l: localizeHref('/errors'), i: `errors_${currentLang}.svg` },
 		{ n: 'spinmii', l: localizeHref('/spinmii'), i: 'spinmii.webp' },
 		{ n: 'limespics', l: '#pics' }
