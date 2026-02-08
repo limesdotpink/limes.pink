@@ -238,7 +238,7 @@
 									xmlns="http://www.w3.org/2000/svg"
 									viewBox="0 0 24 18"
 									height="1.5rem"
-									style="fill: var(--accent)"
+									style="fill: var(--accent);"
 								>
 									<path style="fill: var(--input-bg)" d="M0 4h24v10H0z" />
 									<path d="M0 14h24v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1v-3z" />
@@ -291,6 +291,7 @@
 		--accent: var(--blue);
 		--background: var(--bg-blue);
 		--input-bg: var(--input-bg-blue);
+		--input-border-color: var(--blue);
 	}
 
 	.wrapper {

@@ -54,7 +54,7 @@
 		left: -1px;
 		height: 70%;
 		width: 1px;
-		background: rgba(255, 255, 255, 0.25);
+		border-right: var(--input-border, 1px solid rgba(255, 255, 255, 0.25));
 	}
 	input[type='radio']:checked + label::after {
 		display: none;

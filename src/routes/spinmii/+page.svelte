@@ -289,6 +289,7 @@
 		--accent: var(--purple);
 		--background: var(--bg-purple);
 		--input-bg: var(--input-bg-purple);
+		--input-border-color: var(--purple);
 	}
 
 	.wrapper {

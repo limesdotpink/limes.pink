@@ -47,18 +47,19 @@
 		--input-bg-pink: #fff;
 		--input-bg-purple: #fff;
 		--input-bg-blue: #fff;
-		--card-border: 1px solid #ccc;
-		--input-border: var(--card-border);
+		--input-border-color: #ccc;
+		--input-border: 1px solid var(--input-border-color);
+		--card-border: var(--input-border);
 
 		/* background colors */
-		--bg-pink: #fef;
-		--bg-green: #efe;
-		--bg-blue: #eef;
-		--bg-purple: #fef;
+		--bg-pink: #fff5ff;
+		--bg-green: #f5fff5;
+		--bg-blue: #f5f5ff;
+		--bg-purple: #fff5ff;
 
 		--text-color: #000;
 		--text-muted: #999;
-		--text-on-gradient: #262424;
+		--text-on-gradient: #fff;
 	}
 }
 
