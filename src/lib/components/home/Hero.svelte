@@ -9,6 +9,7 @@
 		<span class="logotype"
 			><Logotype
 				size="1.25em"
+				class="logo"
 				hero
 				fillColor="var(--pink)"
 				bgColor="var(--text-on-gradient)"
@@ -20,7 +21,6 @@
 </div>
 
 <style>
-	
 	span.pink {
 		position: relative;
 		color: var(--pink);
@@ -40,7 +40,12 @@
 
 	span.logotype {
 		position: relative;
-		bottom: -1.35rem;
+		height: auto;
+	}
+
+	span.logotype :global(svg.logo) {
+		position: absolute;
+		bottom: 0;
 	}
 
 	span {
