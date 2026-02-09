@@ -83,7 +83,10 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
-a:hover {
+a:hover,
+a:focus,
+a .logotype-text:hover,
+a .logotype-text:focus {
 	text-decoration: underline;
 }
 

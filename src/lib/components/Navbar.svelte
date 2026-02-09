@@ -11,7 +11,7 @@
 	<nav>
 		<ul>
 			<li class="logo">
-				<a href="/"><Logotype size="1.25em" fillColor="var(--text-on-gradient)" /></a>
+				<a href="/"><Logotype class="logotype" size="1.25em" fillColor="var(--text-on-gradient)" /></a>
 			</li>
 			<li><a href={localizeHref('/#stuff')}>{m.stuff()}</a></li>
 			<li><a href={localizeHref('/#contact')}>{m.contact()}</a></li>
@@ -39,13 +39,17 @@
 		padding: 0;
 	}
 
+	nav :global(.logotype) {
+		transform: translateY(3.5%);
+	}
+
 	.lang-select {
 		margin-left: auto;
 	}
 
 	@media screen and (max-width: 420px) {
 		ul {
-			gap: 1.1rem;
+			gap: 0rem;
 		}
 	}
 

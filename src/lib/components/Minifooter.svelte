@@ -23,7 +23,7 @@
 				onfocus={() => (hover = true)}
 				onmouseout={() => (hover = false)}
 				onblur={() => (hover = false)}
-				><Logotype fillColor={logoColor} {bgColor} size={'1.25rem'} /></a
+				><Logotype class="logotype" fillColor={logoColor} {bgColor} size={'1.25rem'} /></a
 			>{' - '}
 			<a href="https://github.com/limesdotpink/website">{m.source_code()} </a>{' - '}<LanguageSwitcher
 			/>
@@ -51,5 +51,9 @@
 		align-items: center;
 		margin: 0;
 		gap: 0.3rem;
+	}
+
+	.footerwrapper :global(.logotype) {
+		transform: translateY(-3%);
 	}
 </style>

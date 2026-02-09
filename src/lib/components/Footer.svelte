@@ -10,7 +10,7 @@
 </script>
 
 <footer class="hero-footer">
-	<Logotype height="4rem" width="auto" fillColor="var(--text-on-gradient)" />
+	<Logotype class="logotype" height="4rem" width="auto" fillColor="var(--text-on-gradient)" />
 
 	<div>
 		<p>
@@ -31,9 +31,13 @@
 		background: var(--pink);
 	}
 
-	.hero-footer > :global(svg),
+	.hero-footer > :global(.logotype),
 	footer > * {
 		z-index: 2;
+	}
+	
+	.hero-footer > :global(.logotype) {
+		transform: translateY(-2%);
 	}
 
 	p {

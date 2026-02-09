@@ -261,5 +261,8 @@
 			font-size: 1rem;
 			gap: 1rem;
 		}
+		h2 {
+			row-gap:.2rem
+		}
 	}
 </style>

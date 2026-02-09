@@ -1,18 +1,20 @@
 <script lang="ts">
 	const props = $props();
 
-	const { fillColor = 'var(--bg-pink)', bgColor = 'var(--pink)', size = 24, hero = false } = props;
+	const { fillColor = 'var(--bg-pink)', bgColor = 'var(--pink)', size = 24, hero = false, class: className } = props;
 </script>
 
 <svg
 	height={size}
 	viewBox={!hero ? '0 0 135 31' : '0 0 140 31'}
 	fill="none"
+	class={className}
 	xmlns="http://www.w3.org/2000/svg"
+	transform="translate(0 1)"
 	aria-label="limes.pink"
 	{...props}
 >
-	<rect x="0" y="1" width="141" height="27.1" fill={bgColor} />
+	<rect x="0" y="1" width={!hero ? '136' : '141'} height="27.1" fill={bgColor} />
 	<text
 		fill={fillColor}
 		xml:space="preserve"
@@ -21,6 +23,7 @@
 		font-size="24"
 		font-weight="bold"
 		letter-spacing="-0.05em"
+		class="logotype-text"
 		transform="translate(1 0)"
 		><tspan x="28.0469" y="23.6087"
 			>limes.pink{#if hero}:{/if}</tspan
