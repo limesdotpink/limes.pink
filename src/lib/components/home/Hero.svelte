@@ -10,6 +10,7 @@
 			><Logotype
 				size="1.25em"
 				class="logo"
+				hero
 				fillColor="var(--pink)"
 				bgColor="var(--text-on-gradient)"
 			/></span
