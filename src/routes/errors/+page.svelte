@@ -36,8 +36,8 @@
 	<meta name="description" content={m.errors_c()} />
 	<meta property="twitter:description" content={m.errors_c()} />
 	<meta property="og:description" content={m.errors_c()} />
-	<meta property="og:image" content="https:/limes.pink/img/social.png" />
-	<meta property="twitter:image" content="https:/limes.pink/img/social.png" />
+	<meta property="og:image" content="https://limes.pink/img/social.png?v=20260209" />
+	<meta property="twitter:image" content="https://limes.pink/img/social.png?v=20260209" />
 	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:image:alt" content="" />
 	<meta property="og:image:alt" content="" />

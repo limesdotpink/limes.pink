@@ -13,8 +13,8 @@
 	<meta property="twitter:description" content="developer? i hardly know 'er!" />
 	<meta property="og:description" content="developer? i hardly know 'er!" />
 	<meta property="og:site_name" content="limes.pink" />
-	<meta property="og:image" content="https://limes.pink/img/social.png" />
-	<meta name="twitter:image" content="https://limes.pink/img/social.png" />
+	<meta property="og:image" content="https://limes.pink/img/social.png?v=20260209" />
+	<meta name="twitter:image" content="https://limes.pink/img/social.png?v=20260209" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:image:alt" content="" />
 	<meta name="og:image:alt" content="" />
