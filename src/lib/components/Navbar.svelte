@@ -49,7 +49,7 @@
 
 	@media screen and (max-width: 420px) {
 		ul {
-			gap: 0rem;
+			gap: 1.1rem;
 		}
 	}
 
