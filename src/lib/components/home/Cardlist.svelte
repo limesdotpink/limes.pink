@@ -159,6 +159,10 @@
 		color: #fff;
 	}
 
+	p {
+		margin-bottom: .25rem;
+	}
+
 	@media (prefers-color-scheme: light) {
 		a:hover,
 		a:focus {
@@ -238,6 +242,11 @@
 		.pretendo img {
 			transform: rotate(90deg) scale(1.75);
 		}*/
+	}
+	@media screen and (max-width: 630px) {
+		.textwrap p {
+			margin-top: .5rem;
+		}
 	}
 
 	@media screen and (max-width: 560px) {

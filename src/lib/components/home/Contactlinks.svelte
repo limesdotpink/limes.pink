@@ -264,5 +264,9 @@
 		h2 {
 			row-gap:.2rem
 		}
+
+		p {
+			margin-top: .5rem;
+		}
 	}
 </style>
