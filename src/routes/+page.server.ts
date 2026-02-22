@@ -5,8 +5,8 @@ import { supabase } from '$lib/server/supabaseClient';
 export const load: PageServerLoad = async ({ url }) => {
 	const stuffStats = {
 		dcbadge: 265,
-		msgithub: 412,
-		nint: 73,
+		msgithub: 440,
+		nint: 100,
 		ite: -1
 	};
 
