@@ -9,6 +9,8 @@
 	"stuff_nint_c": "same as above, but for any nintendo.com page.<br>you know the drill, just replace 'nintendo.com' with 'nintendo.uk.net'.<br><br>{val}k rickrolls so far >:)",
 	"stuff_dcbadge_t": "dcbadge",
 	"stuff_dcbadge_c": "a customizable badge displaying the online status of a discord account, or the member count of a server.<br><br>{val} stars on github :D",
+	"stuff_ghostposter_t": "ghostposter",
+	"stuff_ghostposter_c": "ingests a Ghost webhook and automatically posts to Bluesky, Mastodon, Tumblr, and Twitter.",
 	"stuff_limespics_t": "limes.pics",
 	"stuff_limespics_c": "my photography stuff™ is on bluesky (@limes.pics) and tumblr (@limesdotpics).",
 	"stuff_errors_t": "errors",

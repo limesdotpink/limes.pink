@@ -8,6 +8,7 @@
 		{ n: 'msgithub', l: 'https://microsoftgithub.com/usage' },
 		{ n: 'nint', l: 'https://nintendo.uk.net/usage' },
 		{ n: 'dcbadge', l: 'https://github.com/limesdotpink/dcbadge' },
+		{ n: 'ghostposter', l: 'https://github.com/limesdotpink/ghostposter' },
 		{ n: 'errors', l: localizeHref('/errors'), i: `errors_${currentLang}.svg` },
 		{ n: 'spinmii', l: localizeHref('/spinmii'), i: 'spinmii.webp' },
 		{ n: 'limespics', l: '#pics' }
@@ -33,9 +34,7 @@
 				</h2>
 				<!-- quick and dirty fix for supabase dying, i am way to tired to do this properly and my website isn't mission critical -->
 				<p>
-					{@html (m as any)
-						[`stuff_${card.n}_c`]({ val: stats?.[card.n] })
-						}
+					{@html (m as any)[`stuff_${card.n}_c`]({ val: stats?.[card.n] })}
 				</p>
 			</div>
 			<div class="imgwrap" style:background="var(--card-img-bg-{card.n})">
@@ -56,6 +55,7 @@
 		--card-img-bg-spinmii: #aa8ed6;
 		--card-img-bg-limespink: var(--pink);
 		--card-img-bg-pretendo: #1b1f3b;
+		--card-img-bg-ghostposter: #ff814a;
 
 		--card-t-msgithub: #aa8ed6;
 		--card-t-nint: #ff3333;
@@ -65,11 +65,12 @@
 		--card-t-spinmii: #ce60f2;
 		--card-t-limespink: var(--pink);
 		--card-t-pretendo: #9d6ff3;
+		--card-t-ghostposter: #ff814a;
 	}
 
 	.cardswrap {
 		display: grid;
-		grid-template-rows: repeat(6, 1fr);
+		grid-template-rows: repeat(7, 1fr);
 		grid-template-columns: auto 1fr;
 		gap: 2rem;
 	}
@@ -160,7 +161,7 @@
 	}
 
 	p {
-		margin-bottom: .25rem;
+		margin-bottom: 0.25rem;
 	}
 
 	@media (prefers-color-scheme: light) {
@@ -245,7 +246,7 @@
 	}
 	@media screen and (max-width: 630px) {
 		.textwrap p {
-			margin-top: .5rem;
+			margin-top: 0.5rem;
 		}
 	}
 

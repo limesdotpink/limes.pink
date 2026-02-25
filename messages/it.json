@@ -9,6 +9,8 @@
 	"stuff_nint_c": "come sopra, ma per qualunque pagina su nintendo.com.<br>ormai lo sai, rimpiazza 'nintendo.com' con 'nintendo.uk.net'.<br><br>{val}mila rickroll >:)",
 	"stuff_dcbadge_t": "dcbadge",
 	"stuff_dcbadge_c": "un badge personalizzabile che mostra info come stato online di un account discord o numero di membri di un server.<br><br>{val} stelle su github :D",
+	"stuff_ghostposter_t": "ghostposter",
+	"stuff_ghostposter_c": "riceve webhook da Ghost e posta automaticamente su Bluesky, Mastodon, Tumblr, e Twitter.",
 	"stuff_limespics_t": "limes.pics",
 	"stuff_limespics_c": "le mie foto sono su bluesky (@limes.pics) e tumblr (@limesdotpics).",
 	"stuff_errors_t": "errori",
