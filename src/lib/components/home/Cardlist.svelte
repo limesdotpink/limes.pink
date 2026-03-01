@@ -86,7 +86,7 @@
 		grid-template-columns: subgrid;
 
 		background: var(--card-bg-pink);
-		/*border-radius: 0.5rem;*/
+		border-radius: 1rem;
 		padding: 2rem;
 		border: var(--card-border, none);
 		box-shadow: inset 0 0 0 0 var(--card-accent, var(--pink));
@@ -104,9 +104,18 @@
 	.card::before {
 		content: '';
 		position: absolute;
-		top: 100%;
+		top: calc(100% - 0.25rem);
 		left: 0;
-		background: color-mix(in oklab, var(--card-accent, var(--pink)) 50%, var(--bg-pink));
+		border-radius: 0.45rem 0 0;
+
+		--card-main: var(--card-accent, var(--pink));
+		--shadow-main: color-mix(in oklab, var(--card-main) 50%, var(--bg-pink));
+
+		background: linear-gradient(
+			to right,
+			var(--shadow-main) 95%,
+			color-mix(in oklab, var(--shadow-main) 50%, var(--card-main))
+		);
 
 		width: 100%;
 		height: 0;
@@ -126,8 +135,15 @@
 		content: '';
 		position: absolute;
 		top: 0;
-		left: 100%;
-		background: var(--card-accent, var(--pink));
+		left: calc(100% - 0.25rem);
+
+		--card-main: var(--card-accent, var(--pink));
+		--shadow-main: color-mix(in oklab, var(--card-main) 50%, var(--bg-pink));
+
+		background: linear-gradient(
+			var(--card-main) 95%,
+			color-mix(in oklab, var(--shadow-main) 50%, var(--card-main))
+		);
 
 		width: 0;
 		height: 100%;
