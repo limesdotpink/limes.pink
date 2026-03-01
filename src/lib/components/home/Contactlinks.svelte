@@ -5,7 +5,6 @@
 		Butterfly,
 		FediverseLogo,
 		MatrixLogo,
-		InstagramLogo,
 		Envelope,
 		TipJar,
 		TumblrLogo
@@ -20,7 +19,9 @@
 	<div>
 		<h2>
 			<GithubLogo size="1em" aria-label="github" />
-			<a href="https://github.com/limesdotpink" target="_blank" rel="noreferrer noopener">@limesdotpink</a>
+			<a href="https://github.com/limesdotpink" target="_blank" rel="noreferrer noopener"
+				>@limesdotpink</a
+			>
 		</h2>
 		<p>{m.contact_github()}</p>
 	</div>
@@ -262,11 +263,11 @@
 			gap: 1rem;
 		}
 		h2 {
-			row-gap:.2rem
+			row-gap: 0.2rem;
 		}
 
 		p {
-			margin-top: .5rem;
+			margin-top: 0.5rem;
 		}
 	}
 </style>

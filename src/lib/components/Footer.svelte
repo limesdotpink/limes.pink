@@ -2,8 +2,6 @@
 	import Logotype from './Logotype.svelte';
 	import LanguageSwitcher from './LanguageSwitcher.svelte';
 
-	import Gradient from './Gradient.svelte';
-
 	import * as m from '$lib/paraglide/messages.js';
 
 	const year = new Date().getFullYear();
@@ -15,7 +13,8 @@
 	<div>
 		<p>
 			© {year} Limes Inc. -
-			<a href="https://github.com/limesdotpink/website">{m.source_code()}</a>{' - '}<LanguageSwitcher />
+			<a href="https://github.com/limesdotpink/website">{m.source_code()}</a
+			>{' - '}<LanguageSwitcher />
 		</p>
 		<p>{m.footer_text()}</p>
 	</div>
@@ -35,7 +34,7 @@
 	footer > * {
 		z-index: 2;
 	}
-	
+
 	.hero-footer > :global(.logotype) {
 		transform: translateY(-2%);
 	}

@@ -6,7 +6,6 @@
 	import Cardlist from '../lib/components/home/Cardlist.svelte';
 	import ContactLinks from '../lib/components/home/Contactlinks.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-	import Gradient from '$lib/components/Gradient.svelte';
 
 	import Modal from '$lib/components/Modal.svelte';
 
@@ -19,7 +18,7 @@
 	let from = page.url.searchParams.get('from');
 	let trainexperience = $state(from === 'italiantrainexperience.com');
 
-	console.log('stats:\n', data);
+	console.log('stats:\n', (() => data)());
 </script>
 
 <svelte:head>

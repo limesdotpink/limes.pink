@@ -11,7 +11,9 @@
 	<nav>
 		<ul>
 			<li class="logo">
-				<a href="/"><Logotype class="logotype" size="1.25em" fillColor="var(--text-on-gradient)" /></a>
+				<a href="/"
+					><Logotype class="logotype" size="1.25em" fillColor="var(--text-on-gradient)" /></a
+				>
 			</li>
 			<li><a href={localizeHref('/#stuff')}>{m.stuff()}</a></li>
 			<li><a href={localizeHref('/#contact')}>{m.contact()}</a></li>

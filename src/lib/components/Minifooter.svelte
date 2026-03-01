@@ -8,7 +8,7 @@
 	const year = new Date().getFullYear();
 
 	const props = $props();
-	const { logoColor, bgColor } = props;
+	const { logoColor, bgColor } = (() => props)();
 
 	let hover = $state(false);
 </script>
@@ -25,8 +25,9 @@
 				onblur={() => (hover = false)}
 				><Logotype class="logotype" fillColor={logoColor} {bgColor} size={'1.25rem'} /></a
 			>{' - '}
-			<a href="https://github.com/limesdotpink/website">{m.source_code()} </a>{' - '}<LanguageSwitcher
-			/>
+			<a href="https://github.com/limesdotpink/website"
+				>{m.source_code()}
+			</a>{' - '}<LanguageSwitcher />
 		</p>
 	</footer>
 </div>

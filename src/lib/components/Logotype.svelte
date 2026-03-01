@@ -1,7 +1,14 @@
 <script lang="ts">
 	const props = $props();
 
-	const { fillColor = 'var(--bg-pink)', bgColor = 'var(--pink)', size = 24, hero = false, class: className } = props;
+	// svelte-ignore state_referenced_locally
+	const {
+		fillColor = 'var(--bg-pink)',
+		bgColor = 'var(--pink)',
+		size = 24,
+		hero = false,
+		class: className
+	} = (() => props)();
 </script>
 
 <svg

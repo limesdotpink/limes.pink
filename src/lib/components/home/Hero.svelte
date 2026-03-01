@@ -21,23 +21,6 @@
 </div>
 
 <style>
-	span.pink {
-		position: relative;
-		color: var(--pink);
-	}
-
-	span.pink::before {
-		content: '';
-		display: block;
-		position: absolute;
-		height: 80%;
-		width: 100%;
-		top: 10%;
-		left: 0;
-		background: var(--text-on-gradient);
-		z-index: -1;
-	}
-
 	span.logotype {
 		position: relative;
 		height: auto;
