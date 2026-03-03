@@ -34,6 +34,24 @@
 		</h2>
 		<p>{m.contact_discord()}</p>
 	</div>
+	<div>
+		<h2>
+			<Butterfly size="1em" aria-label="bluesky" />
+			<a href="https://bsky.app/profile/limes.pink" target="_blank" rel="noreferrer noopener"
+				>@limesdotpink</a
+			>
+		</h2>
+		<p>{m.contact_bsky()}</p>
+	</div>
+	<div>
+		<h2>
+			<FediverseLogo size="1em" aria-label="fediverse" />
+			<a href="https://fedi.limes.pink/@limes" target="_blank" rel="me"
+				>@limesdotpink</a
+			>
+		</h2>
+		<p>{m.contact_fedi()}</p>
+	</div>
 	<div class="doublewidth">
 		<h2>
 			<span>
@@ -102,7 +120,7 @@
 		</h2>
 		<p>{m.contact_email()}</p>
 	</div>
-	<div>
+	<div class="doublewidth">
 		<h2>
 			<TipJar size="1em" aria-label="ko-fi" />
 			<a href="https://ko-fi.com/limesdotpink" target="_blank" rel="noreferrer noopener"
