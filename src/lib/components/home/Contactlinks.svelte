@@ -101,9 +101,9 @@
 				/></svg
 			>
 			<a
-				href="https://en.wikipedia.org/wiki/User:Wikilimes"
+				href="https://en.wikipedia.org/wiki/User:Limes.pink"
 				target="_blank"
-				rel="noreferrer noopener">User:Wikilimes</a
+				rel="noreferrer noopener">User:Limes.pink</a
 			>
 		</h2>
 		<p>{m.contact_wikipedia()}</p>
