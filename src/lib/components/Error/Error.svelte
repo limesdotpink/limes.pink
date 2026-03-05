@@ -68,7 +68,8 @@
 			ctx?.clearRect(canvas.width - 8, 0, 8, canvas.height);
 
 			// workaround to get this to actually reload when state changes
-			const _deps = [header, body, button, supportInfo, qr, gameConsole];
+			// eslint-disable-next-line @typescript-eslint/no-unused-vars
+			const _ = [header, body, button, supportInfo, qr, gameConsole];
 
 			loadImage(template.baseImageUrl).then((img) => {
 				ctx?.drawImage(img, 0, 0);

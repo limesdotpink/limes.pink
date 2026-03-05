@@ -3,8 +3,6 @@
 
 	let canvas = $state();
 
-	let props = $props();
-
 	onMount(() => {
 		const ctx = canvas.getContext('2d');
 		/**
@@ -47,7 +45,7 @@
 	});
 </script>
 
-<canvas width={32} height={32} {...props} class="gradient" alt="" bind:this={canvas}></canvas>
+<canvas width={32} height={32} class="gradient" aria-hidden={true} bind:this={canvas}></canvas>
 
 <style>
 	.gradient {

@@ -7,23 +7,14 @@
 
 	const year = new Date().getFullYear();
 
-	const props = $props();
-	const { logoColor, bgColor } = (() => props)();
-
-	let hover = $state(false);
+	const { logoColor, bgColor } = $props();
 </script>
 
 <div class="footerwrapper">
 	<footer>
 		<p>
 			© {year}
-			<a
-				href="/"
-				onmouseover={() => (hover = true)}
-				onfocus={() => (hover = true)}
-				onmouseout={() => (hover = false)}
-				onblur={() => (hover = false)}
-				><Logotype class="logotype" fillColor={logoColor} {bgColor} size={'1.25rem'} /></a
+			<a href="/"><Logotype class="logotype" fillColor={logoColor} {bgColor} size={'1.25rem'} /></a
 			>{' - '}
 			<a href="https://github.com/limesdotpink/website"
 				>{m.source_code()}

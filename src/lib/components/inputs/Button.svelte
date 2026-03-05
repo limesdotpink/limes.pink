@@ -1,8 +1,8 @@
 <script lang="ts">
-	let props = $props();
+	let { children, onclick, disabled = false } = $props();
 </script>
 
-<button {...props}>{@render props.children()}</button>
+<button {onclick} {disabled}>{@render children()}</button>
 
 <style>
 	button {

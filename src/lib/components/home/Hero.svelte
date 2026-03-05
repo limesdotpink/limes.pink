@@ -1,6 +1,4 @@
 <script lang="ts">
-	import * as m from '$lib/paraglide/messages.js';
-
 	import Logotype from '../Logotype.svelte';
 </script>
 

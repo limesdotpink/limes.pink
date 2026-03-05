@@ -1,25 +1,24 @@
 <script lang="ts">
-	const props = $props();
-
-	// svelte-ignore state_referenced_locally
 	const {
 		fillColor = 'var(--bg-pink)',
 		bgColor = 'var(--pink)',
-		size = 24,
+		size = '24',
+		height = null,
+		width = null,
 		hero = false,
 		class: className
-	} = (() => props)();
+	} = $props();
 </script>
 
 <svg
-	height={size}
+	height={height || size}
+	{width}
 	viewBox={!hero ? '0 0 135 31' : '0 0 140 31'}
 	fill="none"
 	class={className}
 	xmlns="http://www.w3.org/2000/svg"
 	transform="translate(0 1)"
 	aria-label="limes.pink"
-	{...props}
 >
 	<rect x="0" y="1" width={!hero ? '136' : '141'} height="27.1" fill={bgColor} />
 	<text

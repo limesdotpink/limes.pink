@@ -1,5 +1,5 @@
 <script>
-	import { slide, fade } from 'svelte/transition';
+	import { slide } from 'svelte/transition';
 	import Minifooter from '$lib/components/Minifooter.svelte';
 	import * as m from '$lib/paraglide/messages.js';
 
@@ -66,10 +66,10 @@
 				data: dataparams
 			};
 
-			// @ts-ignore, I know what I'm doing. I think I do, at least.
+			// @ts-expect-error, I know what I'm doing. I think I do, at least.
 			query[`camera${axis}Rotate`] = degrees;
 
-			// @ts-ignore
+			// @ts-expect-error i promise this works
 			return new URLSearchParams(query).toString();
 		};
 
