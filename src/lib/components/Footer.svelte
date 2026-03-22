@@ -13,7 +13,7 @@
 	<div>
 		<p>
 			© {year} Limes Inc. -
-			<a href="https://github.com/limesdotpink/website">{m.source_code()}</a
+			<a href="https://github.com/limesdotpink/limes.pink">{m.source_code()}</a
 			>{' - '}<LanguageSwitcher />
 		</p>
 		<p>{m.footer_text()}</p>

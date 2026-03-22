@@ -16,7 +16,7 @@
 			© {year}
 			<a href="/"><Logotype class="logotype" fillColor={logoColor} {bgColor} size={'1.25rem'} /></a
 			>{' - '}
-			<a href="https://github.com/limesdotpink/website"
+			<a href="https://github.com/limesdotpink/limes.pink"
 				>{m.source_code()}
 			</a>{' - '}<LanguageSwitcher />
 		</p>
