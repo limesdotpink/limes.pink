@@ -11,7 +11,8 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
-		"lint:fix": "prettier --write . & eslint --fix ."
+		"lint:fix": "prettier --write . & eslint --fix .",
+		"start": "node -r dotenv/config build"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",
@@ -38,6 +39,7 @@
 		"@fontsource-variable/space-grotesk": "^5.1.1",
 		"@fontsource/space-mono": "^5.1.2",
 		"@supabase/supabase-js": "^2.49.4",
+		"dotenv": "^17.3.1",
 		"gifenc": "https://github.com/mattdesl/gifenc.git",
 		"keyv": "^5.2.3",
 		"qrcanvas": "^3.1.2"
