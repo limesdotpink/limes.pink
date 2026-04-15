@@ -99,6 +99,7 @@
 		display: block;
 		width: 100%;
 		background-color: var(--pink);
+		color: #fff;
 		margin: 0;
 		height: fit-content;
 		padding: 0.25rem;
