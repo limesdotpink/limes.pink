@@ -46,3 +46,6 @@ User-agent: Webzio-Extended
 User-agent: YouBot
 Allow: /sitemap.xml
 Disallow: /
+
+User-agent: *
+Disallow: /pdf/

@@ -1,0 +1,1 @@
+<p>redirects to google's PDF viewer. just paste the pdf url after https://limes.pink/pdf/</p>
