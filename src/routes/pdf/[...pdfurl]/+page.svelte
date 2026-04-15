@@ -89,6 +89,9 @@
 {/if}
 
 <style>
+	:global(html), :global(body) {
+		background: #262424;
+	}
 	.curtain {
 		position: absolute;
 		top: 0;
@@ -96,7 +99,7 @@
 		width: 100%;
 		height: 100%;
 		padding: 1rem 0;
-		/*background: var(--bg-pink, #262424);*/
+		background: var(--bg-pink, #262424);
 		text-align: center;
 		display: flex;
 		flex-flow: column nowrap;
