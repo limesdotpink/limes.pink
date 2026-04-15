@@ -2,8 +2,8 @@
 	import { page } from '$app/state';
 	import Button from '$lib/components/inputs/Button.svelte';
 
-    import Cookies from 'js-cookie'
-    
+	import Cookies from 'js-cookie';
+
 	let { data } = $props();
 
 	let userIsAware = $derived(data.pdfUserIsAware);
@@ -34,7 +34,7 @@
 		<Button
 			onclick={() => {
 				if (doNotShowAgain) {
-					Cookies.set('pdfUserIsAware', 'true', { expires: 365 * 10, path: '/pdf' })
+					Cookies.set('pdfUserIsAware', 'true', { expires: 365 * 10 });
 				}
 
 				userIsAware = true;
