@@ -22,6 +22,7 @@
 		"@sveltejs/adapter-node": "^5.5.4",
 		"@sveltejs/kit": "^2.49.5",
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
+		"@types/js-cookie": "^3.0.6",
 		"eslint": "^9.18.0",
 		"eslint-config-prettier": "^10.0.1",
 		"eslint-plugin-svelte": "^2.46.1",
@@ -41,6 +42,7 @@
 		"@supabase/supabase-js": "^2.49.4",
 		"dotenv": "^17.3.1",
 		"gifenc": "https://github.com/mattdesl/gifenc.git",
+		"js-cookie": "^3.0.5",
 		"keyv": "^5.2.3",
 		"qrcanvas": "^3.1.2"
 	},
