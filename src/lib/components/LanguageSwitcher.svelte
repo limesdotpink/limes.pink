@@ -38,6 +38,10 @@
 		-moz-appearance: none;
 	}
 
+	button:hover {
+		text-decoration: underline;
+	}
+
 	button.selected {
 		font-weight: 700;
 	}
