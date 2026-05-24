@@ -276,7 +276,7 @@
 				<li>{m.spinmii_help_console()}</li>
 				<li>{m.spinmii_help_paste()}:</li>
 				<code>
-					console.log(document.querySelector(".new-mii-wrapper>img.new-mii").src.split("&data=")[1])
+					console.log(document.querySelector('.new-mii-wrapper>img.new-mii').attributes['data-src'].textContent.split("&data=")[1])
 				</code>
 				<li>{m.spinmii_help_done()}</li>
 			</ol>
