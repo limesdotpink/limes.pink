@@ -87,7 +87,7 @@
 				ctx.clearRect(0, 0, 512, 512);
 
 				const url = `https://studio.mii.nintendo.com/miis/image.png?=${_generateQuery(expression, axis, Math.round((i * 360) / frames), dataparams)}`;
-				const corsUrl = `https://corsproxy.io/?${url}`;
+				const corsUrl = `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`;
 
 				const img = new Image();
 				img.crossOrigin = 'anonymous';
