@@ -47,23 +47,23 @@
 			/** @type {number} */ degrees,
 			/** @type {string} */ dataparams
 		) => {
-			
 			const toHundred = (/** @type {string} */ hex) => {
-				return Math.floor(parseInt(hex, 16)/ 255 * 99).toString().padStart(2, '0');
-			}
+				return Math.floor((parseInt(hex, 16) / 255) * 99)
+					.toString()
+					.padStart(2, '0');
+			};
 
 			const r = toHundred(bgColor.substring(1, 3));
 			const g = toHundred(bgColor.substring(3, 5));
 			const b = toHundred(bgColor.substring(5, 7));
 
-			const rgb = r + g + b + bgOpacity.toString().padStart(2, '0');
-			
+			const rgb = r + g + b + '00';
+
 			const query = {
 				type: 'face',
 				expression: expression,
 				width: 512,
-				bgColor:
-					rgb || '13173300',
+				bgColor: rgb || '13173300',
 				clothesColor: 'default',
 				cameraXRotate: 0,
 				cameraYRotate: 0,
@@ -95,10 +95,16 @@
 			canvas.height = 512;
 			const ctx = canvas.getContext('2d');
 
+			ctx.fillStyle = `${bgColor}${Math.round((bgOpacity / 100) * 255)
+				.toString(16)
+				.padStart(2, '0')}`;
+
 			for (let i = 0; i < frames; i++) {
 				loading = ((i / frames) * 100).toFixed(1);
 
 				ctx.clearRect(0, 0, 512, 512);
+
+				ctx?.fillRect(0, 0, 512, 512);
 
 				const url = `https://studio.mii.nintendo.com/miis/image.png?=${_generateQuery(expression, axis, Math.round((i * 360) / frames), dataparams)}`;
 				const corsUrl = `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`;
@@ -138,8 +144,9 @@
 				expression.charCodeAt(0) +
 				expression.charCodeAt(1) +
 				frames +
-				length
-				+ bgColor.substring(1) + bgOpacity;
+				length +
+				bgColor.substring(1) +
+				bgOpacity;
 
 			const url = URL.createObjectURL(blob);
 			const a = document.createElement('a');
@@ -251,7 +258,7 @@
 						</div>
 						<div class="inputgroup">
 							<label for="bgOpacity">{m.spinmii_bgOpacity()}</label>
-							<NumberInput id="bgColor" min={0} max={99} bind:value={bgOpacity} />
+							<NumberInput id="bgColor" min={0} max={100} bind:value={bgOpacity} />
 						</div>
 					</div>
 				{/if}
