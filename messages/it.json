@@ -53,6 +53,8 @@
 	"spinmii_advanced": "avanzate",
 	"spinmii_frames": "numero di frame",
 	"spinmii_length": "durata frame (ms)",
+	"spinmii_bgColor": "colore sfondo",
+	"spinmii_bgOpacity": "opacità sfondo (%)",
 	"spinmii_help_t": "trova i data-params del tuo mii",
 	"spinmii_help_open": "apri ",
 	"spinmii_help_n2": "clicca sul tuo mii, poi modifica",

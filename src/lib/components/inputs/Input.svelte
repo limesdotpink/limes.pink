@@ -1,8 +1,8 @@
 <script lang="ts">
-	let { value = $bindable(), id, placeholder, required, ariaLabel = '' } = $props();
+	let { value = $bindable(), id, placeholder, required, type = '', ariaLabel = '' } = $props();
 </script>
 
-<input bind:value {id} {placeholder} {required} aria-label={ariaLabel} />
+<input bind:value {id} {placeholder} {required} {type} aria-label={ariaLabel} />
 
 <style>
 	input {

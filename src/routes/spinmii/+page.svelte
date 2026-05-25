@@ -8,7 +8,7 @@
 	import Select from '$lib/components/inputs/Select.svelte';
 	import RadioHorizontal from '$lib/components/inputs/RadioHorizontal.svelte';
 	import Input from '$lib/components/inputs/Input.svelte';
-	import Number from '$lib/components/inputs/Number.svelte';
+	import NumberInput from '$lib/components/inputs/Number.svelte';
 	import Button from '$lib/components/inputs/Button.svelte';
 
 	import Modal from '$lib/components/Modal.svelte';
@@ -23,6 +23,8 @@
 	let showAdvanced = $state(false);
 	let frames = $state(24);
 	let length = $state(75);
+	let bgColor = $state('#131733');
+	let bgOpacity = $state(0);
 	let loading = $state('');
 
 	let helpModal = $state(false);
@@ -45,11 +47,23 @@
 			/** @type {number} */ degrees,
 			/** @type {string} */ dataparams
 		) => {
+			
+			const toHundred = (/** @type {string} */ hex) => {
+				return Math.floor(parseInt(hex, 16)/ 255 * 99).toString().padStart(2, '0');
+			}
+
+			const r = toHundred(bgColor.substring(1, 3));
+			const g = toHundred(bgColor.substring(3, 5));
+			const b = toHundred(bgColor.substring(5, 7));
+
+			const rgb = r + g + b + bgOpacity.toString().padStart(2, '0');
+			
 			const query = {
 				type: 'face',
 				expression: expression,
 				width: 512,
-				bgColor: 13173300,
+				bgColor:
+					rgb || '13173300',
 				clothesColor: 'default',
 				cameraXRotate: 0,
 				cameraYRotate: 0,
@@ -124,7 +138,8 @@
 				expression.charCodeAt(0) +
 				expression.charCodeAt(1) +
 				frames +
-				length;
+				length
+				+ bgColor.substring(1) + bgOpacity;
 
 			const url = URL.createObjectURL(blob);
 			const a = document.createElement('a');
@@ -218,11 +233,25 @@
 					<div class="advanced" transition:slide>
 						<div class="inputgroup">
 							<label for="frames">{m.spinmii_frames()}</label>
-							<Number id="frames" bind:value={frames} min="1" max="360" />
+							<NumberInput id="frames" bind:value={frames} min="1" max="360" />
 						</div>
 						<div class="inputgroup">
 							<label for="length">{m.spinmii_length()}</label>
-							<Number id="length" bind:value={length} />
+							<NumberInput id="length" bind:value={length} />
+						</div>
+						<div class="inputgroup">
+							<label for="bgColor">{m.spinmii_bgColor()}</label>
+							<Input
+								type="color"
+								placeholder="#131733"
+								required
+								id="bgColor"
+								bind:value={bgColor}
+							/>
+						</div>
+						<div class="inputgroup">
+							<label for="bgOpacity">{m.spinmii_bgOpacity()}</label>
+							<NumberInput id="bgColor" min={0} max={99} bind:value={bgOpacity} />
 						</div>
 					</div>
 				{/if}
