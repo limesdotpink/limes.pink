@@ -106,8 +106,8 @@
 
 				ctx?.fillRect(0, 0, 512, 512);
 
-				const url = `https://studio.mii.nintendo.com/miis/image.png?=${_generateQuery(expression, axis, Math.round((i * 360) / frames), dataparams)}`;
-				const corsUrl = `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`;
+				const url = `https://studio.mii.nintendo.com/miis/image.png?${_generateQuery(expression, axis, Math.round((i * 360) / frames), dataparams)}`;
+				const corsUrl = `https://cors.limes.pink/${url}`;
 
 				const img = new Image();
 				img.crossOrigin = 'anonymous';
@@ -196,7 +196,7 @@
 					<Input
 						bind:value={dataparams}
 						id="dataparams"
-						placeholder="3b3a411119182228202a2d343c404c474c4d545b6269757b7a80898a929900868e96a4b7bbafb3aca8b3bab7b9c6c8"
+						placeholder="1c1b22707a798189bfc3d6dde3edefeaefecf3fa0108161e1d252e2b31385f272d333f32383238353f42494a565757"
 						required
 					/>
 				</div>
