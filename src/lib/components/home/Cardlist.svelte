@@ -50,17 +50,17 @@
 	:root {
 		/* card image background colors */
 		--card-img-bg-msgithub: #0d1117;
-		--card-img-bg-nint: #ff3333;
+		--card-img-bg-nint: #f33;
 		--card-img-bg-dcbadge: #0c1a2f;
 		--card-img-bg-limespics: var(--green);
-		--card-img-bg-errors: #99bfcc;
-		--card-img-bg-spinmii: #aa8ed6;
+		--card-img-bg-errors: var(--blue);
+		--card-img-bg-spinmii: #ce60f2;
 		--card-img-bg-limespink: var(--pink);
 		--card-img-bg-pretendo: #1b1f3b;
 		--card-img-bg-ghostposter: #ff814a;
 
 		--card-t-msgithub: #aa8ed6;
-		--card-t-nint: #ff3333;
+		--card-t-nint: #f33;
 		--card-t-dcbadge: #a0a8f8;
 		--card-t-limespics: var(--green);
 		--card-t-errors: var(--blue);
