@@ -1,26 +1,14 @@
 <script lang="ts">
-	import * as m from '$lib/paraglide/messages.js';
-
-	import Navbar from '$lib/components/Navbar.svelte';
-	import Hero from '$lib/components/home/Hero.svelte';
-	import Cardlist from '../../../../lib/components/home/Cardlist.svelte';
-	import ContactLinks from '../../../../lib/components/home/Contactlinks.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-
-	import type { PageProps } from './$types';
-
-	let { data }: PageProps = $props();
-
-	console.log('stats:\n', (() => data)());
 </script>
 
 <svelte:head>
-	<title>s/i/x-seven | limes.pink</title>
-	<meta property="og:title" content="s/i/x-seven | limes.pink" />
-	<meta property="twitter:title" content="s/i/x-seven | limes.pink" />
-	<meta name="description" content="developer? i hardly know 'er!" />
-	<meta property="twitter:description" content="developer? i hardly know 'er!" />
-	<meta property="og:description" content="developer? i hardly know 'er!" />
+	<title>discord s/i/x-seven hack 🔥 | limes.pink</title>
+	<meta property="og:title" content="discord s/i/x-seven hack 🔥 | limes.pink" />
+	<meta property="twitter:title" content="discord s/i/x-seven hack 🔥 | limes.pink" />
+	<meta name="description" content="1. send a gif from the featured gifs section&#10;2. send s/i/x-seven&#10;3. six seven" />
+	<meta property="twitter:description" content="1. send a gif from the featured gifs section&#10;2. send s/i/x-seven&#10;3. six seven" />
+	<meta property="og:description" content="1. send a gif from the featured gifs section&#10;2. send s/i/x-seven&#10;3. six seven" />
 	<meta property="og:image" content="https://limes.pink/img/social.png?v=20260209v2" />
 	<meta property="twitter:image" content="https://limes.pink/img/social.png?v=20260209v2" />
 	<meta property="twitter:card" content="summary_large_image" />
