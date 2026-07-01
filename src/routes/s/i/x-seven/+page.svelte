@@ -1,17 +1,30 @@
 <script lang="ts">
 	import Footer from '$lib/components/Footer.svelte';
+
+	import { page } from '$app/state';
+
+	let gifID = page.url.searchParams.get('gif');
 </script>
 
 <svelte:head>
 	<title>discord s/i/x-seven hack 🔥 | limes.pink</title>
 	<meta property="og:title" content="discord s/i/x-seven hack 🔥 | limes.pink" />
 	<meta property="twitter:title" content="discord s/i/x-seven hack 🔥 | limes.pink" />
-	<meta name="description" content="1. send a gif from the featured gifs section&#10;2. send s/i/x-seven&#10;3. six seven" />
-	<meta property="twitter:description" content="1. send a gif from the featured gifs section&#10;2. send s/i/x-seven&#10;3. six seven" />
-	<meta property="og:description" content="1. send a gif from the featured gifs section&#10;2. send s/i/x-seven&#10;3. six seven" />
-	<meta property="og:image" content="https://limes.pink/img/social.png?v=20260209v2" />
-	<meta property="twitter:image" content="https://limes.pink/img/social.png?v=20260209v2" />
-	<meta property="twitter:card" content="summary_large_image" />
+	<meta
+		name="description"
+		content="1. send a gif from the featured gifs section&#10;2. send s/i/x-seven&#10;3. six seven"
+	/>
+	<meta
+		property="twitter:description"
+		content="1. send a gif from the featured gifs section&#10;2. send s/i/x-seven&#10;3. six seven"
+	/>
+	<meta
+		property="og:description"
+		content="1. send a gif from the featured gifs section&#10;2. send s/i/x-seven&#10;3. six seven"
+	/>
+	<meta property="og:image" content={`https://klx-sevenpy.com/gifs/${gifID}`} />
+	<meta property="twitter:image" content={`https://klx-sevenpy.com/gifs/${gifID}`} />
+	<meta property="twitter:card" content={`https://klx-sevenpy.com/gifs/${gifID}`} />
 	<meta property="twitter:image:alt" content="" />
 	<meta property="og:image:alt" content="" />
 </svelte:head>
@@ -22,7 +35,7 @@
 			<h1><span class="coolspan">hi!</span></h1>
 			<p>
 				i'm kip (limes.pink) and i made the <b>discord s/i/x-seven hack</b>, based on an idea by the
-				<a href="https://dootsky.re" target="_blank" >very cool and talented sky</a>, inspired by the
+				<a href="https://dootsky.re" target="_blank">very cool and talented sky</a>, inspired by the
 				<a href="https://www.youtube.com/watch?v=km8CR-fdB7o" target="_blank"
 					>original discord s/e/x hack by rebane</a
 				>.
@@ -36,7 +49,9 @@
 				here.
 			</p>
 			<br />
-			<p>p.s.: <a href="https://github.com/limesdotpink/klx-sevenpy" target="_blank">source code</a>.</p>
+			<p>
+				p.s.: <a href="https://github.com/limesdotpink/klx-sevenpy" target="_blank">source code</a>.
+			</p>
 		</div>
 	</div>
 
@@ -83,6 +98,5 @@
 		.section {
 			padding: 2.5rem 0;
 		}
-
 	}
 </style>
