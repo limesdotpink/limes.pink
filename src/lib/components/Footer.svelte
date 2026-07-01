@@ -8,7 +8,9 @@
 </script>
 
 <footer class="hero-footer">
-	<Logotype class="logotype" height="4rem" width="auto" fillColor="var(--text-on-gradient)" />
+	<a href="/" aria-label="limes.pink"
+		><Logotype class="logotype" height="4rem" width="auto" fillColor="var(--text-on-gradient)" /></a
+	>
 
 	<div>
 		<p>
