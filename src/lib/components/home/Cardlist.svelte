@@ -5,6 +5,7 @@
 	const currentLang = getLocale();
 
 	const cards = [
+		{ n: 'sixseven', l: '/s/i/x-seven', i: '67.webp' },
 		{ n: 'msgithub', l: 'https://microsoftgithub.com/usage' },
 		{ n: 'nint', l: 'https://nintendo.uk.net/usage' },
 		{ n: 'dcbadge', l: 'https://github.com/limesdotpink/dcbadge' },
@@ -49,6 +50,7 @@
 <style>
 	:root {
 		/* card image background colors */
+		--card-img-bg-sixseven: #d29700;
 		--card-img-bg-msgithub: #0d1117;
 		--card-img-bg-nint: #f33;
 		--card-img-bg-dcbadge: #0c1a2f;
@@ -59,6 +61,7 @@
 		--card-img-bg-pretendo: #1b1f3b;
 		--card-img-bg-ghostposter: #ff814a;
 
+		--card-t-sixseven: #d29700;
 		--card-t-msgithub: #aa8ed6;
 		--card-t-nint: #f33;
 		--card-t-dcbadge: #a0a8f8;
@@ -72,7 +75,7 @@
 
 	.cardswrap {
 		display: grid;
-		grid-template-rows: repeat(7, 1fr);
+		grid-template-rows: repeat(8, 1fr);
 		grid-template-columns: auto 1fr;
 		gap: 2rem;
 	}
