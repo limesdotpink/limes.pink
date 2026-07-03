@@ -3,7 +3,12 @@
 
 	import { page } from '$app/state';
 
-	let gifID = page.url.searchParams.get('gif');
+	let ogImage = '/img/67pink.webp';
+
+	const gifID = page.url.searchParams.get('gif');
+	if (gifID) {
+		ogImage = `https://klx-sevenpy.com/gifs/${gifID}.webp`;
+	}
 </script>
 
 <svelte:head>
@@ -22,9 +27,9 @@
 		property="og:description"
 		content="1. send a gif from the featured gifs section&#10;2. send s/i/x-seven&#10;3. six seven"
 	/>
-	<meta property="og:image" content={`https://klx-sevenpy.com/gifs/${gifID}.webp`} />
-	<meta property="twitter:image" content={`https://klx-sevenpy.com/gifs/${gifID}.webp`} />
-	<meta property="twitter:card" content='summary_large_image' />
+	<meta property="og:image" content={ogImage} />
+	<meta property="twitter:image" content={ogImage} />
+	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:image:alt" content="" />
 	<meta property="og:image:alt" content="" />
 </svelte:head>
