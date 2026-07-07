@@ -43,19 +43,18 @@
 				<a href="https://dootsky.re" target="_blank">very cool and talented sky</a>, inspired by the
 				<a href="https://www.youtube.com/watch?v=km8CR-fdB7o" target="_blank"
 					>original discord s/e/x hack by rebane</a
+				>. to learn how this works, look at the
+				<a href="https://github.com/limesdotpink/klx-sevenpy#how-this-works" target="_blank"
+					>readme</a
 				>.
 			</p>
 
 			<p>
-				bandwidth is expensive, so <a href="https://ko-fi.com/limesdotpink" target="_blank"
+				p.s.: bandwidth is expensive, so <a href="https://ko-fi.com/limesdotpink" target="_blank"
 					>please consider donating to my Ko-fi</a
 				>
 				if you're able. also, feel free to check out <a href="/">the rest of my website</a> while you're
 				here.
-			</p>
-			<br />
-			<p>
-				p.s.: <a href="https://github.com/limesdotpink/klx-sevenpy" target="_blank">source code</a>.
 			</p>
 		</div>
 	</div>
