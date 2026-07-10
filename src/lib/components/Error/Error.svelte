@@ -4,7 +4,7 @@
 		header,
 		body,
 		button,
-		qr,
+		qr = "https://www.nintendo.uk.net/en-gb/Support/Nintendo-Switch/How-to-Find-Error-Code-Information-and-Support-1513788.html",
 		supportInfo = '\n\nSupport Information\n① 5.5.5 E\n② WUP-101(03)\n③ LIMES.PINK/ERRORS' /* only used for Wii U */
 	} = $props();
 
