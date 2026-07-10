@@ -177,6 +177,8 @@
 	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:image:alt" content="" />
 	<meta property="og:image:alt" content="" />
+	<link rel="canonical" href="https://limes.pink/spinmii" />
+	<meta property="og:url" content="https://limes.pink/spinmii" />
 </svelte:head>
 
 <div class="wrapper">

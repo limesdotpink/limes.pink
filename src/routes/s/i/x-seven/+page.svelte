@@ -32,6 +32,8 @@
 	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:image:alt" content="" />
 	<meta property="og:image:alt" content="" />
+	<link rel="canonical" href="https://limes.pink/s/i/x-seven" />
+	<meta property="og:url" content="https://limes.pink/s/i/x-seven" />
 </svelte:head>
 
 <div class="wrapper">

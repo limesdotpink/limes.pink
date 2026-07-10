@@ -13,7 +13,7 @@
 				bgColor="var(--text-on-gradient)"
 			/></span
 		><br />
-		<span>web developer?</span><br />
+		<span>developer?</span><br />
 		<span><i>i hardly know 'er!</i></span>
 	</h1>
 </div>

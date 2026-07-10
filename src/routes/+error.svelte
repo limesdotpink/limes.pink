@@ -13,8 +13,8 @@
 	<meta property="twitter:description" content="developer? i hardly know 'er!" />
 	<meta property="og:description" content="developer? i hardly know 'er!" />
 	<meta property="og:site_name" content="limes.pink" />
-	<meta property="og:image" content="https://limes.pink/img/social.png?v=20260209v2" />
-	<meta name="twitter:image" content="https://limes.pink/img/social.png?v=20260209v2" />
+	<meta property="og:image" content="https://limes.pink/img/social.png?v=20260710v1" />
+	<meta name="twitter:image" content="https://limes.pink/img/social.png?v=20260710v1" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:image:alt" content="" />
 	<meta name="og:image:alt" content="" />
@@ -23,13 +23,13 @@
 <div class="errorwrapper">
 	<a
 		href="/"
-		alt={`${m.meta_error_header()}: ${page.status}, ${page.error.message}. ${m.meta_error_message()} ${m.meta_error_button()}?`}
-		title={`${m.meta_error_header()}: ${page.status}, ${page.error.message}. ${m.meta_error_message()} ${m.meta_error_button()}?`}
+		aria-label={`${m.meta_error_header()}: ${page.status}, ${page.error!.message}. ${m.meta_error_message()} ${m.meta_error_button()}?`}
+		title={`${m.meta_error_header()}: ${page.status}, ${page.error!.message}. ${m.meta_error_message()} ${m.meta_error_button()}?`}
 	>
 		<Error
 			gameConsole="wii"
 			header={``}
-			body={`${m.meta_error_header()}: ${page.status} ${page.error.message}\n\n${m.meta_error_message()}`}
+			body={`${m.meta_error_header()}: ${page.status} ${page.error!.message}\n\n${m.meta_error_message()}`}
 			button={m.meta_error_button()}
 		/>
 	</a>
