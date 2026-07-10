@@ -41,7 +41,7 @@
 	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:image:alt" content="" />
 	<meta property="og:image:alt" content="" />
-		<link rel="canonical" href="https://limes.pink/errors" />
+	<link rel="canonical" href="https://limes.pink/errors" />
 	<meta property="og:url" content="https://limes.pink/errors" />
 </svelte:head>
 

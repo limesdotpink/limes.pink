@@ -12,7 +12,9 @@ export const handle: Handle = async ({ event, resolve }) => {
 
 	const corsDomainRegex = /^(.*\.)?limes\.pink$/;
 
-	const host = event.request.headers.get('host') || new URL(event.request.headers.get('origin') || 'https://example.org').hostname;
+	const host =
+		event.request.headers.get('host') ||
+		new URL(event.request.headers.get('origin') || 'https://example.org').hostname;
 
 	if (corsDomainRegex.test(host)) {
 		response.headers.append('Access-Control-Allow-Origin', `https://${host}`);

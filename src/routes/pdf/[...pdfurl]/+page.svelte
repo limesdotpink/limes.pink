@@ -89,7 +89,8 @@
 {/if}
 
 <style>
-	:global(html), :global(body) {
+	:global(html),
+	:global(body) {
 		background: #262424;
 	}
 	.curtain {

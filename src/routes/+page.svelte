@@ -25,16 +25,25 @@
 	<title>limes.pink - developer? i hardly know 'er!</title>
 	<meta property="og:title" content="limes.pink - developer? i hardly know 'er!" />
 	<meta property="twitter:title" content="limes.pink - developer? i hardly know 'er!" />
-	<meta name="description" content="home of a buncha stuff™: discord s/i/x-seven, microsoftgithub.com, nintendo.uk.net, dcbadge, and much more!" />
-	<meta property="twitter:description" content="home of a buncha stuff™: discord s/i/x-seven, microsoftgithub.com, nintendo.uk.net, dcbadge, and much more!" />
-	<meta property="og:description" content="home of a buncha stuff™: discord s/i/x-seven, microsoftgithub.com, nintendo.uk.net, dcbadge, and much more!" />
+	<meta
+		name="description"
+		content="home of a buncha stuff™: discord s/i/x-seven, microsoftgithub.com, nintendo.uk.net, dcbadge, and much more!"
+	/>
+	<meta
+		property="twitter:description"
+		content="home of a buncha stuff™: discord s/i/x-seven, microsoftgithub.com, nintendo.uk.net, dcbadge, and much more!"
+	/>
+	<meta
+		property="og:description"
+		content="home of a buncha stuff™: discord s/i/x-seven, microsoftgithub.com, nintendo.uk.net, dcbadge, and much more!"
+	/>
 	<meta property="og:image" content="https://limes.pink/img/social.png?v=20260710v1" />
 	<meta property="twitter:image" content="https://limes.pink/img/social.png?v=20260710v1" />
 	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:image:alt" content="" />
 	<meta property="og:image:alt" content="" />
 	<link rel="canonical" href="https://limes.pink/" />
-	<meta property="og:url" content="https://limes.pink/"/>
+	<meta property="og:url" content="https://limes.pink/" />
 </svelte:head>
 
 <div class="aniwrapper" id="aniwrapper">
