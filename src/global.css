@@ -121,7 +121,8 @@ a .logotype-text:focus {
 	}
 }
 
-h1 {
+h1,
+h2 {
 	font-size: var(--h1-size, 5rem);
 	font-weight: 700;
 }

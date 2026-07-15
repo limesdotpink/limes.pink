@@ -4,11 +4,11 @@
 	import * as m from '$lib/paraglide/messages.js';
 </script>
 
-<h1>{m.contact_header()}</h1>
+<h2>{m.contact_header()}</h2>
 
 <div class="linkwrapper">
 	<div>
-		<h2>
+		<h3>
 			<a href="https://github.com/limesdotpink" target="_blank" rel="noreferrer noopener">
 				<svg role="img" viewBox="0 0 24 24" height=".9em" xmlns="http://www.w3.org/2000/svg"
 					><title>GitHub</title><path
@@ -18,11 +18,11 @@
 				>
 				<span>@limesdotpink</span>
 			</a>
-		</h2>
+		</h3>
 		<p>{m.contact_github()}</p>
 	</div>
 	<div>
-		<h2>
+		<h3>
 			<a href="https://discord.gg/GghPVAKMKs" target="_blank" rel="noreferrer noopener">
 				<svg role="img" viewBox="0 0 24 24" height=".9em" xmlns="http://www.w3.org/2000/svg"
 					><title>Discord</title><path
@@ -32,11 +32,11 @@
 				>
 				<span>@limes.pink</span>
 			</a>
-		</h2>
+		</h3>
 		<p>{m.contact_discord()}</p>
 	</div>
 	<div class="doublewidth">
-		<h2>
+		<h3>
 			<span
 				><a href="https://fedi.limes.pink/@limes" target="_blank" rel="noreferrer noopener"
 					><svg role="img" viewBox="0 0 24 24" height=".9em" xmlns="http://www.w3.org/2000/svg"
@@ -59,22 +59,22 @@
 					<span>@limes.pink</span></a
 				>
 			</span>
-		</h2>
+		</h3>
 		<p>{m.contact_microblog()}</p>
 	</div>
 
 	<div>
-		<h2>
+		<h3>
 			<a href="https://matrix.to/#/@limes:limes.pink" target="_blank" rel="noreferrer noopener">
 				<MatrixLogo size="1em" aria-label="matrix" />
 				<span>@limes:limes.pink</span>
 			</a>
-		</h2>
+		</h3>
 		<p>{m.contact_matrix()}</p>
 	</div>
 
 	<div>
-		<h2>
+		<h3>
 			<a
 				href="https://en.wikipedia.org/wiki/User:Limes.pink"
 				target="_blank"
@@ -88,11 +88,11 @@
 				>
 				<span>User:Limes.pink</span>
 			</a>
-		</h2>
+		</h3>
 		<p>{m.contact_wikipedia()}</p>
 	</div>
 	<div>
-		<h2>
+		<h3>
 			<a href="https://www.last.fm/user/limesdotpink" target="_blank" rel="noreferrer noopener">
 				<svg role="img" viewBox="0 0 24 24" height=".9em" xmlns="http://www.w3.org/2000/svg"
 					><title>Last.fm</title><path
@@ -102,11 +102,11 @@
 				>
 				<span>@limesdotpink</span>
 			</a>
-		</h2>
+		</h3>
 		<p>{m.contact_lastfm()}</p>
 	</div>
 	<div>
-		<h2>
+		<h3>
 			<a href="https://archive.org/details/@limesdotpink" target="_blank" rel="noreferrer noopener">
 				<svg role="img" viewBox="0 0 24 24" height=".9em" xmlns="http://www.w3.org/2000/svg"
 					><title>Internet Archive</title><path
@@ -116,34 +116,34 @@
 				>
 				<span>@limesdotpink</span>
 			</a>
-		</h2>
+		</h3>
 		<p>{m.contact_archiveorg()}</p>
 	</div>
 	<div>
-		<h2>
+		<h3>
 			<a href="mailto:hey@limes.pink" target="_blank" rel="noreferrer noopener">
 				<Envelope size="1em" aria-label="email" />
 				<span>hey@limes.pink</span>
 			</a>
-		</h2>
+		</h3>
 		<p>{m.contact_email()}</p>
 	</div>
 	<div>
-		<h2>
+		<h3>
 			<a href="https://ko-fi.com/limesdotpink" target="_blank" rel="noreferrer noopener">
 				<TipJar size="1em" aria-label="ko-fi" />
 				<span>@limesdotpink</span>
 			</a>
-		</h2>
+		</h3>
 		<p>{m.contact_donate()}</p>
 	</div>
 </div>
 
-<h1 style:color="var(--green)" id="pics">{m.photo_header()}</h1>
+<h2 style:color="var(--green)" id="pics">{m.photo_header()}</h2>
 
 <div class="linkwrapper photos">
 	<div class="doublewidth">
-		<h2>
+		<h3>
 			<span>
 				<a href="https://bsky.app/profile/limes.pics" target="_blank" rel="noreferrer noopener">
 					<svg role="img" viewBox="0 0 24 24" height=".9em" xmlns="http://www.w3.org/2000/svg"
@@ -166,11 +166,11 @@
 					<span>@limesdotpics</span></a
 				>
 			</span>
-		</h2>
+		</h3>
 		<p>{m.photos_social_only_notice()}</p>
 	</div>
 	<div class="doublewidth">
-		<h2>
+		<h3>
 			<span>
 				<a
 					href="https://commons.wikimedia.org/w/index.php?title=Special:ListFiles/Limes.pink&ilshowall=1"
@@ -186,7 +186,7 @@
 					<span>User:Limes.pink</span></a
 				>
 			</span>
-		</h2>
+		</h3>
 		<p>{m.photos_contact_wikimedia()}</p>
 	</div>
 </div>
@@ -198,11 +198,11 @@
 		gap: 2rem 4rem;
 	}
 
-	h1 {
+	h2 {
 		color: var(--pink);
 	}
 
-	h2 {
+	h3 {
 		display: flex;
 		align-items: center;
 		gap: 0.5rem;
@@ -210,7 +210,7 @@
 		margin: 0;
 	}
 
-	.photos h2 {
+	.photos h3 {
 		color: var(--green);
 	}
 
@@ -254,7 +254,7 @@
 			grid-column: unset;
 		}
 
-		.doublewidth h2 {
+		.doublewidth h3 {
 			display: flex;
 			flex-flow: column;
 			align-items: start;
@@ -266,7 +266,7 @@
 			font-size: 1rem;
 			gap: 1rem;
 		}
-		h2 {
+		h3 {
 			row-gap: 0.2rem;
 		}
 

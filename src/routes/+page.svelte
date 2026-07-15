@@ -81,7 +81,7 @@
 
 {#if trainexperience}
 	<Modal bind:showModal={trainexperience}>
-		<h1 class="modal">{m.trainexperience_h()}</h1>
+		<h2 class="modal">{m.trainexperience_h()}</h2>
 		<p>{m.trainexperience_c({ val: data.ite })}</p>
 	</Modal>
 {/if}
@@ -119,7 +119,8 @@
 	h1 {
 		color: var(--pink);
 	}
-	h1.modal {
+	h2.modal {
+		color: var(--pink);
 		font-size: 2rem;
 		margin-top: 0;
 	}
