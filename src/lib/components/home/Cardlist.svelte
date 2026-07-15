@@ -41,7 +41,7 @@
 				</p>
 			</div>
 			<div class="imgwrap" style:background="var(--card-img-bg-{card.n})">
-				<img src={card.i ? `/img/${card.i}` : `/img/${card.n}.svg`} alt="" />
+				<img src={card.i ? `/img/${card.i}` : `/img/${card.n}.svg`} alt="" role="presentation" />
 			</div>
 		</a>
 	{/each}
