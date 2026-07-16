@@ -30,10 +30,10 @@
 			rel="noreferrer noopener"
 		>
 			<div class="textwrap">
-				<h2>
+				<h3>
 					<!-- eslint-disable-next-line @typescript-eslint/no-explicit-any -->
 					{(m as any)[`stuff_${card.n}_t`]()}
-				</h2>
+				</h3>
 				<!-- quick and dirty fix for supabase dying, i am way to tired to do this properly and my website isn't mission critical -->
 				<p>
 					<!-- eslint-disable-next-line @typescript-eslint/no-explicit-any svelte/no-at-html-tags -->
@@ -149,7 +149,7 @@
 		width: max(100vw, 100vh);
 	}
 
-	.textwrap h2 {
+	.textwrap h3 {
 		font-size: 2rem;
 		margin: 0 0 1rem;
 		text-decoration: underline;
@@ -228,7 +228,7 @@
 			padding: 1rem;
 		}
 
-		.textwrap h2 {
+		.textwrap h3 {
 			font-size: 1.5rem;
 		}
 	}

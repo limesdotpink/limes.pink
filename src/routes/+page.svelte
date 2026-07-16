@@ -61,7 +61,7 @@
 </div>
 <div class="stuffwrapper section" id="stuff">
 	<div class="inner">
-		<h1><span class="coolspan">{m.stuff_header()}</span></h1>
+		<h2><span class="coolspan">{m.stuff_header()}</span></h2>
 
 		<Cardlist stats={data} />
 	</div>
@@ -116,7 +116,7 @@
 		padding: 5rem 0 10rem;
 	}
 
-	h1 {
+	h2 {
 		color: var(--pink);
 	}
 	h2.modal {
