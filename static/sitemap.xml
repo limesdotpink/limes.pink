@@ -23,6 +23,13 @@
         <xhtml:link rel="alternate" hreflang="it" href="https://limes.pink/it/ruotamii" />
         <xhtml:link rel="alternate" hreflang="en" href="https://limes.pink/spinmii" />
     </url>
+    <url>
+        <loc>https://limes.pink/s/i/x-seven</loc>
+        <priority>0.80</priority>
+        <xhtml:link rel="alternate" hreflang="it" href="https://limes.pink/it/s/i/x-seven" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://limes.pink/s/i/x-seven" />
+    </url>
+
 
     <!-- it -->
     <url>
@@ -42,6 +49,12 @@
         <priority>0.80</priority>
         <xhtml:link rel="alternate" hreflang="it" href="https://limes.pink/it/ruotamii" />
         <xhtml:link rel="alternate" hreflang="en" href="https://limes.pink/spinmii" />
+    </url>
+    <url>
+        <loc>https://limes.pink/it/s/i/x-seven</loc>
+        <priority>0.80</priority>
+        <xhtml:link rel="alternate" hreflang="it" href="https://limes.pink/it/s/i/x-seven" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://limes.pink/s/i/x-seven" />
     </url>
 
 </urlset>
