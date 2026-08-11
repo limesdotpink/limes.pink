@@ -38,7 +38,7 @@
 	<meta property="og:description" content={m.errors_c()} />
 	<meta property="og:image" content="https://limes.pink/img/social.png?v=20260710v1" />
 	<meta property="twitter:image" content="https://limes.pink/img/social.png?v=20260710v1" />
-	<meta property="twitter:card" content="summary_large_image" />npm
+	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:image:alt" content="" />
 	<meta property="og:image:alt" content="" />
 	<link rel="canonical" href="https://limes.pink/errors" />
