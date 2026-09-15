@@ -18,7 +18,7 @@ export const load: PageServerLoad = async ({ url }) => {
 		}
 		const data = await response.json();
 
-		stuffStats.msgithub = data.rickrolled.kusers;
+		stuffStats.msgithub = data.users;
 	} catch (error) {
 		console.error('Error while fetching microsoftgithub stats:', error);
 	}
@@ -45,7 +45,7 @@ export const load: PageServerLoad = async ({ url }) => {
 		}
 		const data = await response.json();
 
-		stuffStats.nint = data.rickrolled.kusers;
+		stuffStats.nint = data.users;
 	} catch (error) {
 		console.error('Error while fetching nint stats:', error);
 	}
