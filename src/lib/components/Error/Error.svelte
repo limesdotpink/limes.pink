@@ -233,6 +233,22 @@
 				if (lines[i] === '' && area?.emptyLineOffset) {
 					totalYOffset += area?.emptyLineOffset;
 				} else {
+					if (area.textShadowColor) {
+						ctx.fillStyle = area.textShadowColor;
+
+						ctx.fillText(
+						lines[i],
+						area.textAlign === 'center' ? area.x + area.w / 2 : area.x + totalXOffset,
+						area.y +
+							area?.fontSize * totalYOffset + (area.textShadowYOffset || 0) +
+							area?.fontSize +
+							i * area?.fontSize * (area?.lineHeight || 1),
+						area.w
+					);
+					}
+
+					ctx.fillStyle = area.fill;
+
 					ctx.fillText(
 						lines[i],
 						area.textAlign === 'center' ? area.x + area.w / 2 : area.x + totalXOffset,
