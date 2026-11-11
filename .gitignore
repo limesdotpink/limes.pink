@@ -1,27 +1,24 @@
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Node dependencies
 node_modules
 
-# Output
-.output
-.vercel
-.netlify
-.wrangler
-/.svelte-kit
-/build
+# Logs
+logs
+*.log
 
-# OS
+# Misc
 .DS_Store
-Thumbs.db
+.fleet
+.idea
 
-# Env
+# Local env files
 .env
 .env.*
 !.env.example
-!.env.test
-
-# Vite
-vite.config.js.timestamp-*
-vite.config.ts.timestamp-*
-
-# Paraglide
-src/lib/paraglide
-/node_modules
